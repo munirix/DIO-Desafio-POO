@@ -26,7 +26,7 @@ public class Main {
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
-        Dev devCamila = new Dev();
+        Dev devMunira = new Dev();
         devMunira.setNome("Munira");
         devMunira.inscreverBootcamp(bootcamp);
         System.out.println("Inscritos Munira:" + devMunira.getConteudosInscritos());
