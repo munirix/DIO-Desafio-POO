@@ -29,29 +29,28 @@ public class Main {
         Dev devMunira = new Dev();
         devMunira.setNome("Munira");
         devMunira.inscreverBootcamp(bootcamp);
-        System.out.println("Inscritos Munira:" + devMunira.getConteudosInscritos());
+        System.out.println("Inscritos "+devMunira.getNome() +":" + devMunira.getConteudosInscritos());
         devMunira.progredir();
         devMunira.progredir();
-        System.out.println("-");
-        System.out.println("Inscritos Munira:" + devMunira.getConteudosInscritos());
-        System.out.println("Concluídos Munira:" + devMunira.getConteudosConcluidos());
-        System.out.println("XP:" + devMunira.calcularTotalXp());
-
         System.out.println("\n-------\n");
+        System.out.println("Inscritos "+devMunira.getNome() +":" + devMunira.getConteudosInscritos());
+        System.out.println("Concluídos "+devMunira.getNome() +":" + devMunira.getConteudosConcluidos());
+        System.out.println("\nXP:" + devMunira.calcularTotalXp());
+
+        System.out.println("\n=============================================\n");
 
         Dev devJoao = new Dev();
         devJoao.setNome("Joao");
         devJoao.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
+        System.out.println("Inscritos "+devJoao.getNome() +":" + devJoao.getConteudosInscritos());
         devJoao.progredir();
         devJoao.progredir();
         devJoao.progredir();
-        System.out.println("-");
-        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
-        System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
-        System.out.println("XP:" + devJoao.calcularTotalXp());
+        System.out.println("\n-------\n");
+        System.out.println("Inscritos "+devJoao.getNome() +":" + devJoao.getConteudosInscritos());
+        System.out.println("Concluidos "+devJoao.getNome() +":" + devJoao.getConteudosConcluidos());
+        System.out.println("\nXP:" + devJoao.calcularTotalXp());
 
     }
 
 }
-
